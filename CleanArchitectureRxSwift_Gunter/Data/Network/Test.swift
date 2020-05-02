@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+
+class Test {
+    class func getAuth() -> Bool {
+        return true
+    }
+}

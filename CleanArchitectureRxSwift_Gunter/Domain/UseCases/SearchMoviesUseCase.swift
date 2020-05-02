@@ -6,4 +6,22 @@
 //  Copyright © 2020 Gunter. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+
+protocol SearchMoviesUseCaseProtocol {
+    func excute(query: MovieQuery, page: Int) -> Single<MoviesPage>
+}
+
+class SearchMoviesUseCase: SearchMoviesUseCaseProtocol {
+    
+    private let moviesRepository: MoviesRepository
+    
+    init(moviesRepository: MoviesRepository) {
+        self.moviesRepository = moviesRepository
+    }
+    
+    func excute(query: MovieQuery, page: Int) -> Single<MoviesPage> {
+        return moviesRepository.fetchMovieList(query: query, page: page)
+    }
+    
+}

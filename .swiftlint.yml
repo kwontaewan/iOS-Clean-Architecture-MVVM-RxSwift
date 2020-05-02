@@ -1,0 +1,8 @@
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - identifier_name
+  - force_try
+  - type_name
+excluded:
+  - Pods

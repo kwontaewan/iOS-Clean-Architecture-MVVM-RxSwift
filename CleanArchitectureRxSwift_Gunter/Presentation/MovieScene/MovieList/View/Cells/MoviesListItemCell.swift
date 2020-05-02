@@ -10,15 +10,30 @@ import UIKit
 
 class MoviesListItemCell: UITableViewCell {
 
+    static let reuseIdentifier = String(describing: MoviesListItemCell.self)
+    
+    static let height = CGFloat(130)
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var overViewLabel: UILabel!
+    
+    @IBOutlet weak var posterImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func bind(_ viewModel: MoviesListItemViewModel) {
+        self.titleLabel.text = viewModel.title
+        self.dateLabel.text = viewModel.releaseDate
+        self.overViewLabel.text = viewModel.overview
     }
 
 }

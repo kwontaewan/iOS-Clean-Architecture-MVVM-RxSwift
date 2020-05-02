@@ -1,0 +1,82 @@
+PODS:
+  - Alamofire (5.0.5)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
+  - Kingfisher (5.13.3):
+    - Kingfisher/Core (= 5.13.3)
+  - Kingfisher/Core (5.13.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - MoyaSugar (1.3.3):
+    - MoyaSugar/Core (= 1.3.3)
+  - MoyaSugar/Core (1.3.3):
+    - Moya (>= 14.0.0-beta.2)
+  - MoyaSugar/RxSwift (1.3.3):
+    - Moya/RxSwift (>= 14.0.0-beta.2)
+    - MoyaSugar/Core
+    - RxSwift (>= 5.0.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SwiftLint (0.39.1)
+  - Then (2.6.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaLumberjack/Swift
+  - Kingfisher
+  - Moya
+  - Moya/RxSwift
+  - MoyaSugar (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
+  - MoyaSugar/RxSwift (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
+  - RxCocoa
+  - RxSwift
+  - SwiftLint
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - Kingfisher
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+    - Then
+
+EXTERNAL SOURCES:
+  MoyaSugar:
+    :branch: master
+    :git: https://github.com/devxoul/MoyaSugar.git
+
+CHECKOUT OPTIONS:
+  MoyaSugar:
+    :commit: 079f25af9798977885058895085051379755bc7c
+    :git: https://github.com/devxoul/MoyaSugar.git
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  MoyaSugar: 63390c557e038c087dc4bcc8a9f9fda69647ce43
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+
+PODFILE CHECKSUM: 57dffaa231b53b05a09cb9e5f7ee5892eaba9c6e
+
+COCOAPODS: 1.9.1

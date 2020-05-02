@@ -6,4 +6,10 @@
 //  Copyright © 2020 Gunter. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+
+protocol MoviesRepository {
+    
+    func fetchMovieList(query: MovieQuery, page: Int) -> Single<MoviesPage>
+    
+}

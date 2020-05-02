@@ -9,14 +9,14 @@ import Moya
 import MoyaSugar
 import RxSwift
 
-//typealias DrrribleNetworking = Networking<DribbbleAPI>
+typealias MovieNetworking = Networking<MovieAPI>
 
 final class Networking<Target: SugarTargetType>: MoyaSugarProvider<Target> {
-  init(plugins: [PluginType] = []) {
-    let session = MoyaProvider<Target>.defaultAlamofireSession()
-    session.sessionConfiguration.timeoutIntervalForRequest = 10
-
-    super.init(session: session, plugins: plugins)
+    
+    init(plugins: [PluginType] = []) {
+        let session = MoyaProvider<Target>.defaultAlamofireSession()
+        session.sessionConfiguration.timeoutIntervalForRequest = 10
+        super.init(session: session, plugins: plugins)
   }
 
   func request(

@@ -15,16 +15,6 @@ class BaseViewController: UIViewController {
       return type(of: self).description().components(separatedBy: ".").last ?? ""
     }()
     
-    // MARK: Initializing
-
-    init() {
-      super.init(nibName: nil, bundle: nil)
-    }
-
-    required convenience init?(coder aDecoder: NSCoder) {
-      self.init()
-    }
-
     deinit {
       log.verbose("DEINIT: \(self.className)")
     }

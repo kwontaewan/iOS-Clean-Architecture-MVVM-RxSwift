@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+final class AppDIContainer {
+    
+    func makeMoviesSceneDIContainer() -> MoviesSceneDIContainer {
+        let dependencies = MoviesSceneDIContainer.Dependencies(movieNetworking: MovieNetworking())
+        return MoviesSceneDIContainer(dependencies: dependencies)
+    }
+    
+}
