@@ -16,6 +16,10 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
     
     @IBOutlet weak var tableView: UITableView!
     
+    private var activityIndicator: UIActivityIndicatorView!
+    
+    private var emptyLabel: UILabel!
+    
     private var viewModel: MoviesListViewModel!
         
     static func create(with viewModel: MoviesListViewModel) -> MoviesListViewController {
@@ -38,6 +42,15 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
     private func initView() {
         tableView.estimatedRowHeight = MoviesListItemCell.height
         tableView.rowHeight = UITableView.automaticDimension
+        activityIndicator = UIActivityIndicatorView(frame:
+            CGRect(
+                x: UIScreen.main.bounds.size.width * 0.5,
+                y: UIScreen.main.bounds.size.height * 0.5,
+                width: 20,
+                height: 20)
+        )
+        
+        self.view.addSubview(activityIndicator)
     }
     
     private func setupRx() {
@@ -51,8 +64,12 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
             .debug()
         
         let input = MoviesListViewModel.Input(query: query)
-        
+                    
         let output = viewModel.transform(input: input)
+        
+        output.fetching
+            .drive(activityIndicator.rx.isAnimating)
+            .disposed(by: disposeBag)
         
         output.movies.drive(
             tableView.rx.items(
@@ -60,6 +77,10 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
                 cellType: MoviesListItemCell.self)) { _, viewModel, cell in
                     cell.bind(viewModel)
             }.disposed(by: disposeBag)
+        
+        output.error.drive(onNext: { (error) in
+            log.error("error \(error)")
+        }).disposed(by: disposeBag)
         
     }
     

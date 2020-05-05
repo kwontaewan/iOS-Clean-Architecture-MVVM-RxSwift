@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol MoviesSearchFlowCoordinatorDependencies  {
+protocol MoviesSearchFlowCoordinatorDependencies {
     
     func makeMoviesListViewController(coordinator: MoviesSearchFlowCoordinator) -> MoviesListViewController
     
     func makeMoviesDetailsViewController(movie: Movie) -> UIViewController
 }
 
-protocol MoviesSearchFlowCoordinator  {
+protocol MoviesSearchFlowCoordinator {
     
     func start()
     

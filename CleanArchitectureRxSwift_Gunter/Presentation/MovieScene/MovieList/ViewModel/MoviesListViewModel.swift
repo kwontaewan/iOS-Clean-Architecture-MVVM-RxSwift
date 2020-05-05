@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-final class MoviesListViewModel: ViewModelType {
+final class MoviesListViewModel: DetectDeinit, ViewModelType {
     
     struct Input {
         let query: Signal<String>
@@ -18,6 +18,10 @@ final class MoviesListViewModel: ViewModelType {
     
     struct Output {
         let movies: Driver<[MoviesListItemViewModel]>
+        
+        let fetching: Driver<Bool>
+        
+        let error: Driver<Error>
     }
     
     private let searchMoviesUseCase: SearchMoviesUseCase
@@ -32,14 +36,25 @@ final class MoviesListViewModel: ViewModelType {
     
     func transform(input: Input) -> Output {
         
+        let activityIndicator = ActivityIndicator()
+        
+        let errorTracker = ErrorTracker()
+    
         let movies = input.query.flatMapLatest { (query) -> Driver<[MoviesListItemViewModel]> in
             return self.searchMoviesUseCase
                 .excute(query: MovieQuery(query: query), page: 1)
-                .asDriverOnErrorJustComplete()
+                .trackActivity(activityIndicator)
+                .trackError(errorTracker)
+                .asDriver(onErrorJustReturn: MoviesPage(page: 1, totalPages: 0, movies: []))
                 .map { $0.movies.map {MoviesListItemViewModel(with: $0)} }
         }
         
-        return Output(movies: movies)
+        let fetching = activityIndicator.asDriver()
+        
+        return Output(movies: movies,
+                    fetching: fetching,
+                    error: errorTracker.asDriver()
+        )
         
     }
         

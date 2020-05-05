@@ -8,7 +8,7 @@
 
 import RxSwift
 
-class MoviesDAO: MoviesRepository {
+class MoviesDAO: DetectDeinit, MoviesRepository {
     
     private let network: MovieNetworking
     
@@ -23,7 +23,7 @@ class MoviesDAO: MoviesRepository {
         return network
             .request(.movies(param: requsetDTO))
             .map(MoviesResponseDTO.self)
-            .map{ $0.toDomain() }
+            .map{$0.toDomain()}
     }
     
 }

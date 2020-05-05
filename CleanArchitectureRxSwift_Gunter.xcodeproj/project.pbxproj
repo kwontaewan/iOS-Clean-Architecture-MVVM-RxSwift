@@ -39,6 +39,10 @@
 		5B007621245D844A005B300D /* MoviesSearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B007620245D844A005B300D /* MoviesSearchFlowCoordinator.swift */; };
 		5B007627245D9726005B300D /* MoviesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B007626245D9726005B300D /* MoviesListViewController.storyboard */; };
 		5B007629245D9B5D005B300D /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B007628245D9B5D005B300D /* MoviesListViewController.swift */; };
+		5B00763D245FF7C8005B300D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00763C245FF7C8005B300D /* ApiError.swift */; };
+		5B007641246138F3005B300D /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B007640246138F3005B300D /* ErrorTracker.swift */; };
+		5B00764324613AEB005B300D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00764224613AEB005B300D /* ActivityIndicator.swift */; };
+		5B0076472461423A005B300D /* DetectDeinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0076462461423A005B300D /* DetectDeinit.swift */; };
 		8A16045022EFE45F675B79EF /* Pods_CleanArchitectureRxSwift_Gunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,10 @@
 		5B007620245D844A005B300D /* MoviesSearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesSearchFlowCoordinator.swift; sourceTree = "<group>"; };
 		5B007626245D9726005B300D /* MoviesListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviesListViewController.storyboard; sourceTree = "<group>"; };
 		5B007628245D9B5D005B300D /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		5B00763C245FF7C8005B300D /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		5B007640246138F3005B300D /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		5B00764224613AEB005B300D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		5B0076462461423A005B300D /* DetectDeinit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectDeinit.swift; sourceTree = "<group>"; };
 		B97B4F41AAD80FFA25068722 /* Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig"; sourceTree = "<group>"; };
 		D0DBA5C1AF8071F16C66CE2E /* Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig"; sourceTree = "<group>"; };
 		E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureRxSwift_Gunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +182,9 @@
 				5B0075DF245AAA55005B300D /* Protocols */,
 				5B007605245C0D22005B300D /* BaseViewController.swift */,
 				5B007618245D6A12005B300D /* Observable+Ext.swift */,
+				5B007640246138F3005B300D /* ErrorTracker.swift */,
+				5B00764224613AEB005B300D /* ActivityIndicator.swift */,
+				5B0076462461423A005B300D /* DetectDeinit.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -245,6 +256,7 @@
 			children = (
 				5B0075F6245BF8CF005B300D /* MoviesRequestDTO+Mapping.swift */,
 				5B0075F8245BFB6D005B300D /* MoviesResponseDTO+Mapping.swift */,
+				5B00763C245FF7C8005B300D /* ApiError.swift */,
 			);
 			path = DataMapping;
 			sourceTree = "<group>";
@@ -494,17 +506,21 @@
 				5B007629245D9B5D005B300D /* MoviesListViewController.swift in Sources */,
 				5B0075E3245AAA7F005B300D /* StoryboardInstantiable.swift in Sources */,
 				5B0075EB245BF624005B300D /* MovieAPI.swift in Sources */,
+				5B007641246138F3005B300D /* ErrorTracker.swift in Sources */,
 				5B0075FB245BFE78005B300D /* Test.swift in Sources */,
+				5B00764324613AEB005B300D /* ActivityIndicator.swift in Sources */,
 				5B00761F245D8105005B300D /* AppFlowCoordinator.swift in Sources */,
 				5B00761D245D80F2005B300D /* MoviesSceneDIContainer.swift in Sources */,
 				5B0075F3245BF852005B300D /* Movie.swift in Sources */,
 				5B0075FD245C043A005B300D /* MoviesRepository.swift in Sources */,
 				5B0075F1245BF7D5005B300D /* ModelType.swift in Sources */,
 				5B007613245D6476005B300D /* MoviesListItemViewModel.swift in Sources */,
+				5B00763D245FF7C8005B300D /* ApiError.swift in Sources */,
 				5B0075E5245AAD73005B300D /* Networking.swift in Sources */,
 				5B007610245D5E71005B300D /* MoviesListViewModel.swift in Sources */,
 				5B0075FF245C06EC005B300D /* MovieQuery.swift in Sources */,
 				5B0075E8245AADB1005B300D /* Logger.swift in Sources */,
+				5B0076472461423A005B300D /* DetectDeinit.swift in Sources */,
 				5B0075E1245AAA70005B300D /* Alertable.swift in Sources */,
 				5B0075C4245AA306005B300D /* SceneDelegate.swift in Sources */,
 			);

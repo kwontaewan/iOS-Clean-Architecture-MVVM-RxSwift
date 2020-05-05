@@ -13,7 +13,7 @@ typealias MovieNetworking = Networking<MovieAPI>
 
 final class Networking<Target: SugarTargetType>: MoyaSugarProvider<Target> {
     
-    init(plugins: [PluginType] = []) {
+    init(plugins: [PluginType] = [NetworkLoggerPlugin()]) {
         let session = MoyaProvider<Target>.defaultAlamofireSession()
         session.sessionConfiguration.timeoutIntervalForRequest = 10
         super.init(session: session, plugins: plugins)
@@ -27,6 +27,7 @@ final class Networking<Target: SugarTargetType>: MoyaSugarProvider<Target> {
   ) -> Single<Response> {
     let requestString = "\(target.method.rawValue) \(target.path)"
     return self.rx.request(target)
+      .catchAPIError(APIErrorResponse.self)
       .filterSuccessfulStatusCodes()
       .do(
         onSuccess: { value in

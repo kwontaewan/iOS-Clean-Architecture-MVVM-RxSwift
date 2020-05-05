@@ -12,7 +12,7 @@ protocol SearchMoviesUseCaseProtocol {
     func excute(query: MovieQuery, page: Int) -> Single<MoviesPage>
 }
 
-class SearchMoviesUseCase: SearchMoviesUseCaseProtocol {
+class SearchMoviesUseCase: DetectDeinit, SearchMoviesUseCaseProtocol {
     
     private let moviesRepository: MoviesRepository
     
