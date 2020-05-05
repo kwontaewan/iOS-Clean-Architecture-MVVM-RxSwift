@@ -61,8 +61,7 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
             .text
             .orEmpty
             .changed
-            .asSignal()
-            .debug()
+            .asDriver()
         
         let didSelect = tableView.rx
             .modelSelected(MoviesListItemViewModel.self)

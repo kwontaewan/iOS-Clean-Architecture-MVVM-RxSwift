@@ -17,7 +17,7 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
     
     let loading = BehaviorRelay<Bool>(value: false)
        
-    var pageIndex: Int = 0
+    var pageIndex: Int = 1
        
     let error = PublishSubject<Swift.Error>()
        
@@ -26,11 +26,9 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
     var isAllLoaded = false
     
     struct Input {
-        let query: Signal<String>
+        let query: Driver<String>
         
         let loadNextPageTrigger: PublishSubject<Void> = PublishSubject<Void>()
-        
-        let moives: BehaviorSubject<[MoviesListItemViewModel]> = BehaviorSubject<[MoviesListItemViewModel]>(value: [])
         
         let didSelectCell: Driver<MoviesListItemViewModel>
     }
@@ -68,6 +66,7 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
                     return Observable.empty()
                 } else {
                     return Observable<Int>.create { observer in
+                        
                         observer.onNext(1)
                         observer.onCompleted()
                         return Disposables.create()
@@ -104,6 +103,7 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
                  .excute(query: MovieQuery(query: query), page: page)
                  .trackActivity(activityIndicator)
                  .trackError(errorTracker)
+                 .catchErrorJustReturn(MoviesPage(page: 0, totalPages: 0, movies: []))
                  .map { $0.movies.map {MoviesListItemViewModel(with: $0)} }
             
         }

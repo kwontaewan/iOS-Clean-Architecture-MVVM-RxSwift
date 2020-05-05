@@ -49,8 +49,27 @@
 		5B00765024617AF1005B300D /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00764F24617AF1005B300D /* UIImageView+Kingfisher.swift */; };
 		5B00765224617B38005B300D /* PictureUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00765124617B38005B300D /* PictureUrl.swift */; };
 		5B00765624618149005B300D /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00765524618149005B300D /* MovieDetailsViewModel.swift */; };
+		5BAEA1BD2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA1BC2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift */; };
+		5BAEA1CB2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA1CA2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift */; };
 		8A16045022EFE45F675B79EF /* Pods_CleanArchitectureRxSwift_Gunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BAEA1BF2461A362006ED591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B0075B6245AA306005B300D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B0075BD245AA306005B300D;
+			remoteInfo = CleanArchitectureRxSwift_Gunter;
+		};
+		5BAEA1CD2461A370006ED591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B0075B6245AA306005B300D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B0075BD245AA306005B300D;
+			remoteInfo = CleanArchitectureRxSwift_Gunter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B0075BE245AA306005B300D /* CleanArchitectureRxSwift_Gunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureRxSwift_Gunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +116,12 @@
 		5B00764F24617AF1005B300D /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		5B00765124617B38005B300D /* PictureUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureUrl.swift; sourceTree = "<group>"; };
 		5B00765524618149005B300D /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		5BAEA1BA2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureRxSwift_GunterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAEA1BC2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureRxSwift_GunterTests.swift; sourceTree = "<group>"; };
+		5BAEA1BE2461A362006ED591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAEA1C82461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureRxSwift_GunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAEA1CA2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureRxSwift_GunterUITests.swift; sourceTree = "<group>"; };
+		5BAEA1CC2461A370006ED591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B97B4F41AAD80FFA25068722 /* Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig"; sourceTree = "<group>"; };
 		D0DBA5C1AF8071F16C66CE2E /* Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig"; sourceTree = "<group>"; };
 		E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureRxSwift_Gunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +136,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BAEA1B72461A362006ED591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAEA1C52461A370006ED591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,6 +158,8 @@
 			children = (
 				5B0075D6245AA803005B300D /* .swiftlint.yml */,
 				5B0075C0245AA306005B300D /* CleanArchitectureRxSwift_Gunter */,
+				5BAEA1BB2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests */,
+				5BAEA1C92461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests */,
 				5B0075BF245AA306005B300D /* Products */,
 				C8EBC21CBA309A87709DFE52 /* Pods */,
 				E4D9CDAC16ABEE0AA326108B /* Frameworks */,
@@ -129,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				5B0075BE245AA306005B300D /* CleanArchitectureRxSwift_Gunter.app */,
+				5BAEA1BA2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.xctest */,
+				5BAEA1C82461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,6 +425,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		5BAEA1BB2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BAEA1BC2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift */,
+				5BAEA1BE2461A362006ED591 /* Info.plist */,
+			);
+			path = CleanArchitectureRxSwift_GunterTests;
+			sourceTree = "<group>";
+		};
+		5BAEA1C92461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BAEA1CA2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift */,
+				5BAEA1CC2461A370006ED591 /* Info.plist */,
+			);
+			path = CleanArchitectureRxSwift_GunterUITests;
+			sourceTree = "<group>";
+		};
 		C8EBC21CBA309A87709DFE52 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +483,42 @@
 			productReference = 5B0075BE245AA306005B300D /* CleanArchitectureRxSwift_Gunter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5BAEA1B92461A362006ED591 /* CleanArchitectureRxSwift_GunterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BAEA1C32461A362006ED591 /* Build configuration list for PBXNativeTarget "CleanArchitectureRxSwift_GunterTests" */;
+			buildPhases = (
+				5BAEA1B62461A362006ED591 /* Sources */,
+				5BAEA1B72461A362006ED591 /* Frameworks */,
+				5BAEA1B82461A362006ED591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BAEA1C02461A362006ED591 /* PBXTargetDependency */,
+			);
+			name = CleanArchitectureRxSwift_GunterTests;
+			productName = CleanArchitectureRxSwift_GunterTests;
+			productReference = 5BAEA1BA2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BAEA1C72461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BAEA1CF2461A370006ED591 /* Build configuration list for PBXNativeTarget "CleanArchitectureRxSwift_GunterUITests" */;
+			buildPhases = (
+				5BAEA1C42461A370006ED591 /* Sources */,
+				5BAEA1C52461A370006ED591 /* Frameworks */,
+				5BAEA1C62461A370006ED591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BAEA1CE2461A370006ED591 /* PBXTargetDependency */,
+			);
+			name = CleanArchitectureRxSwift_GunterUITests;
+			productName = CleanArchitectureRxSwift_GunterUITests;
+			productReference = 5BAEA1C82461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -434,6 +531,14 @@
 				TargetAttributes = {
 					5B0075BD245AA306005B300D = {
 						CreatedOnToolsVersion = 11.4;
+					};
+					5BAEA1B92461A362006ED591 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 5B0075BD245AA306005B300D;
+					};
+					5BAEA1C72461A370006ED591 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 5B0075BD245AA306005B300D;
 					};
 				};
 			};
@@ -451,6 +556,8 @@
 			projectRoot = "";
 			targets = (
 				5B0075BD245AA306005B300D /* CleanArchitectureRxSwift_Gunter */,
+				5BAEA1B92461A362006ED591 /* CleanArchitectureRxSwift_GunterTests */,
+				5BAEA1C72461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,6 +573,20 @@
 				5B00764E246179DE005B300D /* MovieDetailsViewController.storyboard in Resources */,
 				5B0075CE245AA308005B300D /* LaunchScreen.storyboard in Resources */,
 				5B0075CB245AA308005B300D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAEA1B82461A362006ED591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAEA1C62461A370006ED591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +695,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BAEA1B62461A362006ED591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BAEA1BD2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAEA1C42461A370006ED591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BAEA1CB2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BAEA1C02461A362006ED591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B0075BD245AA306005B300D /* CleanArchitectureRxSwift_Gunter */;
+			targetProxy = 5BAEA1BF2461A362006ED591 /* PBXContainerItemProxy */;
+		};
+		5BAEA1CE2461A370006ED591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B0075BD245AA306005B300D /* CleanArchitectureRxSwift_Gunter */;
+			targetProxy = 5BAEA1CD2461A370006ED591 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B0075CC245AA308005B300D /* LaunchScreen.storyboard */ = {
@@ -742,6 +892,84 @@
 			};
 			name = Release;
 		};
+		5BAEA1C12461A362006ED591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQFD9V79PC;
+				INFOPLIST_FILE = CleanArchitectureRxSwift_GunterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.mobidoo.CleanArchitectureRxSwift-GunterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureRxSwift_Gunter.app/CleanArchitectureRxSwift_Gunter";
+			};
+			name = Debug;
+		};
+		5BAEA1C22461A362006ED591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQFD9V79PC;
+				INFOPLIST_FILE = CleanArchitectureRxSwift_GunterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.mobidoo.CleanArchitectureRxSwift-GunterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureRxSwift_Gunter.app/CleanArchitectureRxSwift_Gunter";
+			};
+			name = Release;
+		};
+		5BAEA1D02461A370006ED591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQFD9V79PC;
+				INFOPLIST_FILE = CleanArchitectureRxSwift_GunterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.mobidoo.CleanArchitectureRxSwift-GunterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanArchitectureRxSwift_Gunter;
+			};
+			name = Debug;
+		};
+		5BAEA1D12461A370006ED591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQFD9V79PC;
+				INFOPLIST_FILE = CleanArchitectureRxSwift_GunterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.mobidoo.CleanArchitectureRxSwift-GunterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanArchitectureRxSwift_Gunter;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -759,6 +987,24 @@
 			buildConfigurations = (
 				5B0075D3245AA308005B300D /* Debug */,
 				5B0075D4245AA308005B300D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BAEA1C32461A362006ED591 /* Build configuration list for PBXNativeTarget "CleanArchitectureRxSwift_GunterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BAEA1C12461A362006ED591 /* Debug */,
+				5BAEA1C22461A362006ED591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BAEA1CF2461A370006ED591 /* Build configuration list for PBXNativeTarget "CleanArchitectureRxSwift_GunterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BAEA1D02461A370006ED591 /* Debug */,
+				5BAEA1D12461A370006ED591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
