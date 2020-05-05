@@ -24,8 +24,6 @@ target 'CleanArchitectureRxSwift_Gunter' do
 
   #Logging
   pod 'CocoaLumberjack/Swift'
-  
-  
   pod 'Then'
   
   #Lint
