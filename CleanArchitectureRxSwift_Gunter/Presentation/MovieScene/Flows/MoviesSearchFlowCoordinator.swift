@@ -12,7 +12,7 @@ protocol MoviesSearchFlowCoordinatorDependencies {
     
     func makeMoviesListViewController(coordinator: MoviesSearchFlowCoordinator) -> MoviesListViewController
     
-    func makeMoviesDetailsViewController(movie: Movie) -> UIViewController
+    func makeMovieDetailsViewController(movie: Movie) -> MovieDetailsViewController
 }
 
 protocol MoviesSearchFlowCoordinator {
@@ -43,7 +43,8 @@ class DefaultMoviesSearchFlowCoordinator: MoviesSearchFlowCoordinator {
     }
     
     func showMovieDetails(movie: Movie) {
-        
+        let vc = dependencies.makeMovieDetailsViewController(movie: movie)
+        navigationController.pushViewController(vc, animated: true)
     }
     
 }

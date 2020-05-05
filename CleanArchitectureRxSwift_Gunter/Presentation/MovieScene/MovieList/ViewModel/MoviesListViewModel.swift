@@ -31,6 +31,8 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
         let loadNextPageTrigger: PublishSubject<Void> = PublishSubject<Void>()
         
         let moives: BehaviorSubject<[MoviesListItemViewModel]> = BehaviorSubject<[MoviesListItemViewModel]>(value: [])
+        
+        let didSelectCell: Driver<MoviesListItemViewModel>
     }
     
     struct Output {
@@ -38,13 +40,15 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
         
         let fetching: Driver<Bool>
         
+        let didSelectCell: Driver<MoviesListItemViewModel>
+        
         let error: Driver<Error>
     }
     
     private let searchMoviesUseCase: SearchMoviesUseCase
     
     private let coordinator: MoviesSearchFlowCoordinator
-
+    
     init(searchMoviesUseCase: SearchMoviesUseCase,
          coordinator: MoviesSearchFlowCoordinator) {
         self.searchMoviesUseCase = searchMoviesUseCase
@@ -93,7 +97,7 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
         
         let request = Observable.combineLatest(pageMerge, input.query.asObservable())
 
-        let response = request.flatMapLatest { (page, query)
+        let response = request.flatMapLatest { [unowned self] (page, query)
             -> Observable<[MoviesListItemViewModel]> in
             
             return self.searchMoviesUseCase
@@ -105,9 +109,9 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
         }
         
        Observable
-        .combineLatest(request, response, moives.asObservable()) { [unowned self] _, response, moives in
-            self.isAllLoaded = response.count < 20
-            return self.pageIndex == 1 ? response : moives + response
+        .combineLatest(request, response, moives.asObservable()) { [weak self] _, response, moives in
+            self?.isAllLoaded = response.count < 20
+            return self?.pageIndex == 1 ? response : moives + response
        }
        .sample(response)
        .bind(to: moives)
@@ -122,8 +126,13 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
         
         let fetching = activityIndicator.asDriver()
         
+        let didSelectCell = input.didSelectCell.do(onNext: { [weak self] (viewModel) in
+            self?.coordinator.showMovieDetails(movie: viewModel.movie)
+        })
+        
         return Output(movies: moives,
                     fetching: fetching,
+                    didSelectCell: didSelectCell,
                     error: errorTracker.asDriver()
         )
         

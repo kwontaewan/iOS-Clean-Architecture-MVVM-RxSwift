@@ -13,11 +13,13 @@ struct MoviesListItemViewModel: Equatable {
     let overview: String
     let releaseDate: String
     let posterImagePath: String?
+    let movie: Movie
 }
 
 extension MoviesListItemViewModel {
 
     init(with movie: Movie) {
+        self.movie = movie
         self.title = movie.title ?? ""
         self.posterImagePath = movie.posterPath
         self.overview = movie.overview ?? ""

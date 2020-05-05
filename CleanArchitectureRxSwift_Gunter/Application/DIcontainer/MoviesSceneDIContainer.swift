@@ -48,12 +48,19 @@ final class MoviesSceneDIContainer {
         )
     }
     
-    func makeMoviesDetailsViewController(
+    // MARK: - Movies Detail
+    func makeMovieDetailsViewController(
         movie: Movie
-    ) -> UIViewController {
-        return UIViewController()
+    ) -> MovieDetailsViewController {
+        return MovieDetailsViewController.create(
+            with: makeMoviesDetailsViewModel(movie: movie)
+        )
     }
     
+    func makeMoviesDetailsViewModel(movie: Movie) -> MovieDetailsViewModel {
+        return MovieDetailsViewModel(movie: movie)
+    }
+        
     // MARK: - Flow Coordinators
     func makeMoviesSearchFlowCoordinator(
         navigationController: UINavigationController

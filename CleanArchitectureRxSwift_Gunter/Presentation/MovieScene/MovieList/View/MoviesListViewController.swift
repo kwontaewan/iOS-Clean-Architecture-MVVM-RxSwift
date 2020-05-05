@@ -64,8 +64,13 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
             .asSignal()
             .debug()
         
+        let didSelect = tableView.rx
+            .modelSelected(MoviesListItemViewModel.self)
+            .asDriver()
+        
         let input = MoviesListViewModel.Input(
-            query: query
+            query: query,
+            didSelectCell: didSelect
         )
         
         tableView.rx.reachedBottom()
@@ -89,6 +94,9 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
             log.error("error \(error)")
         }).disposed(by: disposeBag)
         
+        output.didSelectCell
+            .drive()
+            .disposed(by: disposeBag)
     }
     
 }

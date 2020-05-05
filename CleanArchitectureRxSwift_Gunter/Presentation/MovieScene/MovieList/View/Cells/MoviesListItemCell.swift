@@ -34,6 +34,9 @@ class MoviesListItemCell: UITableViewCell {
         self.titleLabel.text = viewModel.title
         self.dateLabel.text = viewModel.releaseDate
         self.overViewLabel.text = viewModel.overview
+        self.posterImageView.setImage(with:
+            PictureUrl.getPicUrl()+(viewModel.posterImagePath ?? "")
+        )
+        
     }
-
 }
