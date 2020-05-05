@@ -23,7 +23,10 @@ class MoviesDAO: DetectDeinit, MoviesRepository {
         return network
             .request(.movies(param: requsetDTO))
             .map(MoviesResponseDTO.self)
-            .map{$0.toDomain()}
+            .map{ $0.toDomain() }
+            .do(onSuccess: { (response) in
+                log.debug("response \(response.movies.count) page \(response.page)")
+            })
     }
     
 }

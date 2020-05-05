@@ -27,6 +27,14 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
   - SwiftLint (0.39.1)
   - Then (2.6.0)
 
@@ -40,6 +48,7 @@ DEPENDENCIES:
   - MoyaSugar/RxSwift (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
   - RxCocoa
   - RxSwift
+  - RxSwiftExt (~> 5)
   - SwiftLint
   - Then
 
@@ -52,6 +61,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - RxSwiftExt
     - SwiftLint
     - Then
 
@@ -74,9 +84,10 @@ SPEC CHECKSUMS:
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: 57dffaa231b53b05a09cb9e5f7ee5892eaba9c6e
+PODFILE CHECKSUM: 29175802a56c77add90476593fb143a161dddace
 
 COCOAPODS: 1.9.1

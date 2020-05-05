@@ -20,6 +20,7 @@ target 'CleanArchitectureRxSwift_Gunter' do
   # Rx
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxSwiftExt', '~> 5'
 
   #Logging
   pod 'CocoaLumberjack/Swift'

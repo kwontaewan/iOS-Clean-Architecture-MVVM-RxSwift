@@ -4,5 +4,6 @@ disabled_rules:
   - identifier_name
   - force_try
   - type_name
+  - function_body_length
 excluded:
   - Pods

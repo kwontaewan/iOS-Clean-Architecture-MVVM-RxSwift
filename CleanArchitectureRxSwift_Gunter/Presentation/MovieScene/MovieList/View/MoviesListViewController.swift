@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxSwiftExt
 
 final class MoviesListViewController: BaseViewController, StoryboardInstantiable, Alertable {
         
@@ -63,7 +64,13 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
             .asSignal()
             .debug()
         
-        let input = MoviesListViewModel.Input(query: query)
+        let input = MoviesListViewModel.Input(
+            query: query
+        )
+        
+        tableView.rx.reachedBottom()
+            .bind(to: input.loadNextPageTrigger)
+            .disposed(by: disposeBag)
                     
         let output = viewModel.transform(input: input)
         
@@ -71,7 +78,7 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
             .drive(activityIndicator.rx.isAnimating)
             .disposed(by: disposeBag)
         
-        output.movies.drive(
+        output.movies.asDriver(onErrorJustReturn: []).drive(
             tableView.rx.items(
                 cellIdentifier: MoviesListItemCell.reuseIdentifier,
                 cellType: MoviesListItemCell.self)) { _, viewModel, cell in
