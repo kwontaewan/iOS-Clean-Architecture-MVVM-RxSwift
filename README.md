@@ -9,7 +9,7 @@ iOS Project implemented with Clean Layered Architecture and MVVM + RxSwift + Moy
 * **Data Repositories Layer** = Repositories Implementations + API (Network)
 * **Presentation Layer (MVVM)** = ViewModels + Views
 
-![Alt text](README_FILES/Action configuration.png?raw=true "Modules Dependencie")
+![Alt text](README_FILES/Action_configuration.png?raw=true "Modules Dependencie")
 
 ## Built With
 - [RxSwift](https://github.com/ReactiveX/RxSwift) - Reactive Programming in Swift
