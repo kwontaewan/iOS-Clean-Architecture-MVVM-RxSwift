@@ -21,6 +21,10 @@ PODS:
     - Moya/RxSwift (>= 14.0.0-beta.2)
     - MoyaSugar/Core
     - RxSwift (>= 5.0.0)
+  - Nimble (8.0.7)
+  - Quick (2.2.0)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -35,6 +39,8 @@ PODS:
   - RxSwiftExt/RxCocoa (5.2.0):
     - RxCocoa (~> 5.0)
     - RxSwiftExt/Core
+  - RxTest (5.1.1):
+    - RxSwift (~> 5)
   - SwiftLint (0.39.1)
   - Then (2.6.0)
 
@@ -46,9 +52,13 @@ DEPENDENCIES:
   - Moya/RxSwift
   - MoyaSugar (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
   - MoyaSugar/RxSwift (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
+  - Nimble
+  - Quick
+  - RxBlocking
   - RxCocoa
   - RxSwift
   - RxSwiftExt (~> 5)
+  - RxTest
   - SwiftLint
   - Then
 
@@ -58,10 +68,14 @@ SPEC REPOS:
     - CocoaLumberjack
     - Kingfisher
     - Moya
+    - Nimble
+    - Quick
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
     - RxSwiftExt
+    - RxTest
     - SwiftLint
     - Then
 
@@ -81,13 +95,17 @@ SPEC CHECKSUMS:
   Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   MoyaSugar: 63390c557e038c087dc4bcc8a9f9fda69647ce43
+  Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: 29175802a56c77add90476593fb143a161dddace
+PODFILE CHECKSUM: b9ddc0bb6be26958ed52289222cf45bdf3b3fa0c
 
 COCOAPODS: 1.9.1

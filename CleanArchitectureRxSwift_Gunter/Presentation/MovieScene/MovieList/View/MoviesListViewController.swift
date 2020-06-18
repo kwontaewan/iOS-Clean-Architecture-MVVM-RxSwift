@@ -73,6 +73,9 @@ final class MoviesListViewController: BaseViewController, StoryboardInstantiable
         )
         
         tableView.rx.reachedBottom()
+            .do(onNext: { _ in
+                log.debug("reachedBottom reachedBottom reachedBottom")
+            })
             .bind(to: input.loadNextPageTrigger)
             .disposed(by: disposeBag)
                     

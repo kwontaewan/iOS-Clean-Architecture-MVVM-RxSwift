@@ -11,7 +11,9 @@ import RxSwift
 import RxCocoa
 import RxSwiftExt
 
-final class MoviesListViewModel: DetectDeinit, ViewModelType {
+protocol MoviesListViewModelProtocol: ViewModelType { }
+
+final class MoviesListViewModel: MoviesListViewModelProtocol {
     
     let moives: BehaviorSubject<[MoviesListItemViewModel]> = BehaviorSubject<[MoviesListItemViewModel]>(value: [])
     
@@ -43,11 +45,11 @@ final class MoviesListViewModel: DetectDeinit, ViewModelType {
         let error: Driver<Error>
     }
     
-    private let searchMoviesUseCase: SearchMoviesUseCase
+    private let searchMoviesUseCase: SearchMoviesUseCaseProtocol
     
     private let coordinator: MoviesSearchFlowCoordinator
     
-    init(searchMoviesUseCase: SearchMoviesUseCase,
+    init(searchMoviesUseCase: SearchMoviesUseCaseProtocol,
          coordinator: MoviesSearchFlowCoordinator) {
         self.searchMoviesUseCase = searchMoviesUseCase
         self.coordinator = coordinator

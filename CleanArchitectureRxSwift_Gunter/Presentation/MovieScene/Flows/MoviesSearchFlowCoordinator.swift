@@ -26,12 +26,12 @@ class DefaultMoviesSearchFlowCoordinator: MoviesSearchFlowCoordinator {
     
     private let navigationController: UINavigationController
     
-    private let dependencies: MoviesSceneDIContainer
+    private let dependencies: MoviesSearchFlowCoordinatorDependencies
     
     private weak var moviesListVC: MoviesListViewController?
     
     init(navigationController: UINavigationController,
-         dependencies: MoviesSceneDIContainer) {
+         dependencies: MoviesSearchFlowCoordinatorDependencies) {
         self.navigationController = navigationController
         self.dependencies = dependencies
     }
@@ -39,7 +39,7 @@ class DefaultMoviesSearchFlowCoordinator: MoviesSearchFlowCoordinator {
     func start() {
         let vc = dependencies.makeMoviesListViewController(coordinator: self)
         navigationController.pushViewController(vc, animated: false)
-        moviesListVC = vc
+        //moviesListVC = vc
     }
     
     func showMovieDetails(movie: Movie) {

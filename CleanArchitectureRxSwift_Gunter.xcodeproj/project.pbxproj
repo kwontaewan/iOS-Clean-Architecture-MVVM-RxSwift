@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56904E0ECE7BFB9977D5B1A5 /* libPods-CleanArchitectureRxSwift_GunterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11609BFC5024B77A69F0D034 /* libPods-CleanArchitectureRxSwift_GunterUITests.a */; };
 		5B0075C2245AA306005B300D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0075C1245AA306005B300D /* AppDelegate.swift */; };
 		5B0075C4245AA306005B300D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0075C3245AA306005B300D /* SceneDelegate.swift */; };
 		5B0075CB245AA308005B300D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0075CA245AA308005B300D /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		5BAEA1BD2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA1BC2461A362006ED591 /* CleanArchitectureRxSwift_GunterTests.swift */; };
 		5BAEA1CB2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA1CA2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift */; };
 		8A16045022EFE45F675B79EF /* Pods_CleanArchitectureRxSwift_Gunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */; };
+		CCC6E362912BDF85CFEC08DE /* libPods-CleanArchitectureRxSwift_GunterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD664D1EDAADCE31D12A136 /* libPods-CleanArchitectureRxSwift_GunterTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11609BFC5024B77A69F0D034 /* libPods-CleanArchitectureRxSwift_GunterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleanArchitectureRxSwift_GunterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FBACD7569971F7625CD0BB /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0075BE245AA306005B300D /* CleanArchitectureRxSwift_Gunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureRxSwift_Gunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0075C1245AA306005B300D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B0075C3245AA306005B300D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,9 +126,17 @@
 		5BAEA1C82461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureRxSwift_GunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAEA1CA2461A370006ED591 /* CleanArchitectureRxSwift_GunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureRxSwift_GunterUITests.swift; sourceTree = "<group>"; };
 		5BAEA1CC2461A370006ED591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E628992E1C7CA3B45C40EF9 /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6831E96AE7EB19DA075F7164 /* Pods-CleanArchitectureRxSwift_GunterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_GunterUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_GunterUITests/Pods-CleanArchitectureRxSwift_GunterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DB68B184C9E782316257E7B /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B97B4F41AAD80FFA25068722 /* Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig"; sourceTree = "<group>"; };
 		D0DBA5C1AF8071F16C66CE2E /* Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig"; sourceTree = "<group>"; };
+		D1D79F54CE519DD5342AF116 /* Pods-CleanArchitectureRxSwift_GunterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_GunterTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_GunterTests/Pods-CleanArchitectureRxSwift_GunterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAD664D1EDAADCE31D12A136 /* libPods-CleanArchitectureRxSwift_GunterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleanArchitectureRxSwift_GunterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureRxSwift_Gunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC559EC38A0363A7CCE25239 /* Pods-CleanArchitectureRxSwift_GunterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_GunterTests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_GunterTests/Pods-CleanArchitectureRxSwift_GunterTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEC73546C74CDC86890A672E /* Pods-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_GunterUITests/Pods-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFDF3ADF1326359B2BBA341E /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests/Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC6E362912BDF85CFEC08DE /* libPods-CleanArchitectureRxSwift_GunterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56904E0ECE7BFB9977D5B1A5 /* libPods-CleanArchitectureRxSwift_GunterUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +462,14 @@
 			children = (
 				D0DBA5C1AF8071F16C66CE2E /* Pods-CleanArchitectureRxSwift_Gunter.debug.xcconfig */,
 				B97B4F41AAD80FFA25068722 /* Pods-CleanArchitectureRxSwift_Gunter.release.xcconfig */,
+				57FBACD7569971F7625CD0BB /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.debug.xcconfig */,
+				FFDF3ADF1326359B2BBA341E /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterTests.release.xcconfig */,
+				5E628992E1C7CA3B45C40EF9 /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig */,
+				6DB68B184C9E782316257E7B /* Pods-CleanArchitectureRxSwift_Gunter-Tests-CleanArchitectureRxSwift_GunterUITests.release.xcconfig */,
+				D1D79F54CE519DD5342AF116 /* Pods-CleanArchitectureRxSwift_GunterTests.debug.xcconfig */,
+				EC559EC38A0363A7CCE25239 /* Pods-CleanArchitectureRxSwift_GunterTests.release.xcconfig */,
+				EEC73546C74CDC86890A672E /* Pods-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig */,
+				6831E96AE7EB19DA075F7164 /* Pods-CleanArchitectureRxSwift_GunterUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -456,6 +478,8 @@
 			isa = PBXGroup;
 			children = (
 				E7A90FFAD45061F8918D46B0 /* Pods_CleanArchitectureRxSwift_Gunter.framework */,
+				DAD664D1EDAADCE31D12A136 /* libPods-CleanArchitectureRxSwift_GunterTests.a */,
+				11609BFC5024B77A69F0D034 /* libPods-CleanArchitectureRxSwift_GunterUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -487,6 +511,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BAEA1C32461A362006ED591 /* Build configuration list for PBXNativeTarget "CleanArchitectureRxSwift_GunterTests" */;
 			buildPhases = (
+				B57F5E6900644BB2D8C4082D /* [CP] Check Pods Manifest.lock */,
 				5BAEA1B62461A362006ED591 /* Sources */,
 				5BAEA1B72461A362006ED591 /* Frameworks */,
 				5BAEA1B82461A362006ED591 /* Resources */,
@@ -505,6 +530,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BAEA1CF2461A370006ED591 /* Build configuration list for PBXNativeTarget "CleanArchitectureRxSwift_GunterUITests" */;
 			buildPhases = (
+				0EF6EFCE27D68A93892B2E9A /* [CP] Check Pods Manifest.lock */,
 				5BAEA1C42461A370006ED591 /* Sources */,
 				5BAEA1C52461A370006ED591 /* Frameworks */,
 				5BAEA1C62461A370006ED591 /* Resources */,
@@ -593,6 +619,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EF6EFCE27D68A93892B2E9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArchitectureRxSwift_GunterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B0075D5245AA628005B300D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,6 +695,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureRxSwift_Gunter/Pods-CleanArchitectureRxSwift_Gunter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57F5E6900644BB2D8C4082D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArchitectureRxSwift_GunterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -894,6 +964,7 @@
 		};
 		5BAEA1C12461A362006ED591 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D79F54CE519DD5342AF116 /* Pods-CleanArchitectureRxSwift_GunterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -914,6 +985,7 @@
 		};
 		5BAEA1C22461A362006ED591 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC559EC38A0363A7CCE25239 /* Pods-CleanArchitectureRxSwift_GunterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -934,6 +1006,7 @@
 		};
 		5BAEA1D02461A370006ED591 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC73546C74CDC86890A672E /* Pods-CleanArchitectureRxSwift_GunterUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQFD9V79PC;
@@ -953,6 +1026,7 @@
 		};
 		5BAEA1D12461A370006ED591 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6831E96AE7EB19DA075F7164 /* Pods-CleanArchitectureRxSwift_GunterUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQFD9V79PC;

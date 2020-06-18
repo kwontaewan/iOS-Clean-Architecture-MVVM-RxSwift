@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 
 class CleanArchitectureRxSwift_GunterTests: XCTestCase {
 
