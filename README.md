@@ -1,5 +1,5 @@
 # Template iOS App using Clean Architecture and MVVM + RXSwift
-iOS Project implemented with Clean Layered Architecture and MVVM + RxSwift + Moya (Can be used as Template project by replacing item name “Movie”) ** Added RxSwift to the this project ** [iOS-Clean-Architecture-MVVM](https://github.com/kudoleh/iOS-Clean-Architecture-MVVM)
+iOS Project implemented with Clean Layered Architecture and MVVM + RxSwift + Moya (Can be used as Template project by replacing item name “Movie”) **Added RxSwift to the this project** [iOS-Clean-Architecture-MVVM](https://github.com/kudoleh/iOS-Clean-Architecture-MVVM)
 
 ![Alt text](README_FILES/Clean_Architecture.png?raw=true "Clean Architecture Layers")
 
